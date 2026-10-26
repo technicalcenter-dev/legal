@@ -11,17 +11,17 @@
   <main>
     <a class="brand" href="../">YIWUSUPPLY</a>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective September 15, 2026; updated October 26, 2026</p>
+    <p class="meta">Effective September 15, 2026; updated October 27, 2026</p>
     <p>YiwuSupply is an independent, local-first sourcing companion. The current mobile release does not require an online account and does not send personal or sourcing data to YiwuSupply or TC Safa servers.</p>
 
     <h2>Data stored on the device</h2>
-    <p>The app stores shops, products, offers, collections, visits, notes, photos, and app settings in app-private storage on the phone. Optional AI-provider API keys are held using platform secure storage. Removing the app removes its local app data according to the phone platform's behavior.</p>
+    <p>The app stores shops, products, offers, collections, visits, quotation history, notes, photos, attachments, and app settings in app-private storage on the phone. Optional AI-provider API keys are held using platform secure storage. Removing the app removes its local app data according to the phone platform's behavior.</p>
 
     <h2>Device permissions</h2>
     <ul>
       <li>Camera and photo access are used only when the user captures or selects sourcing images.</li>
       <li>Foreground location is optional and is used during Quick Capture to save a shop coordinate. The app does not request background location.</li>
-      <li>Internet access is used only for a user-requested AI analysis.</li>
+      <li>Internet access is used for requested AI analysis or separately enabled automatic product-photo suggestions. Manual saving works without internet access.</li>
     </ul>
 
     <h2>Version 1.2.0 beta: documents, follow-ups and backups</h2>
@@ -31,6 +31,12 @@
 
     <h2>AI in version 1.2.0 beta</h2>
     <p>Optional AI uses only OpenAI with your own API key held in platform secure storage. Business-card extraction uses GPT-6 Luna and sends only the selected business-card images, up to four compressed images depending on the platform. The editable result prioritizes English while retaining original Chinese facts separately. Explicit detailed analysis uses GPT-6.1 Sol and sends the selected capture images and typed context shown by that workflow. Nothing is sent automatically. Document attachments, backups, your full shop library, personal ratings and saved GPS coordinates are not automatically sent for card extraction.</p>
+
+    <h2>Version 1.3.0 beta: products and optional automatic AI</h2>
+    <p>Products, photos, prices, dated quotation history, notes and quotation files can be kept inside each shop on the device. Confirming or removing a comparison link is your choice; AI never automatically merges products or certifies equivalent quality.</p>
+    <p>Automatic product suggestions are a separate optional setting with their own disclosure and permission. When enabled, newly added product photos can be sent to OpenAI using your own key: up to two selected product images for descriptions, and the source image plus up to three shortlisted saved product images for a possible-match check. Visible information within those images is included. Structured shop contacts, private notes, ratings, quotation attachments and GPS coordinates are not included in these automatic requests. GPT-6 Luna is used for this workflow; internet access and API charges may apply. Enabling the setting does not analyse the entire historical library.</p>
+    <p>Automatic requests set <code>store:false</code>, but this is not a guarantee of zero provider retention. OpenAI handles your account and requests under its terms and settings. Turning automatic suggestions off stops new automatic requests and rejects late results. Clearing the key prevents future requests. Completed descriptions remain locally until removed with their data; provider-side retention or deletion is managed through your provider account. Detailed analysis remains an explicit action using GPT-6.1 Sol.</p>
+    <p>You can select products for a PDF and choose whether it contains notes and supplier contact details. The native share interface sends the file only to the destination you choose. Backup archives also contain product notes, quotation history, selected documents and confirmed comparison links. They exclude API keys, device permissions, automatic-AI consent and guide progress. Restoring does not enable automatic AI on a new device. The first-use and replayable practice guide uses device-local progress and does not create practice shops in your business records.</p>
 
     <h2>AI provider keys in earlier versions</h2>
     <p>Versions before 1.2.0 can store optional keys for OpenAI, Claude/Anthropic, Google Gemini, and DeepSeek. Nothing is sent automatically. When the user selects a provider and taps <strong>Analyze</strong>, YiwuSupply sends the current typed capture context directly to that provider. OpenAI, Claude, and Gemini may also receive compressed copies of up to four selected capture photos; DeepSeek receives typed context only. The provider processes that content under the user's account and its own terms and privacy policy. Suggestions remain editable and are stored locally only when the user saves.</p>
