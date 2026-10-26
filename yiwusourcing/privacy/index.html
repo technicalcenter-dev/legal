@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="YiwuSupply privacy policy.">
-  <title>Privacy Policy — YiwuSupply</title>
+  <title>Privacy Policy | YiwuSupply</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <main>
     <a class="brand" href="../">YIWUSUPPLY</a>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective September 15, 2026</p>
+    <p class="meta">Effective September 15, 2026; updated October 26, 2026</p>
     <p>YiwuSupply is an independent, local-first sourcing companion. The current mobile release does not require an online account and does not send personal or sourcing data to YiwuSupply or TC Safa servers.</p>
 
     <h2>Data stored on the device</h2>
@@ -24,8 +24,16 @@
       <li>Internet access is used only for a user-requested AI analysis.</li>
     </ul>
 
-    <h2>AI provider keys</h2>
-    <p>The Settings screen can store optional keys for OpenAI, Claude/Anthropic, Google Gemini, and DeepSeek. Nothing is sent automatically. When the user selects a provider and taps <strong>Analyze</strong>, YiwuSupply sends the current typed capture context directly to that provider. OpenAI, Claude, and Gemini may also receive compressed copies of up to four selected capture photos; DeepSeek receives typed context only. The provider processes that content under the user's account and its own terms and privacy policy. Suggestions remain editable and are stored locally only when the user saves.</p>
+    <h2>Version 1.2.0 beta: documents, follow-ups and backups</h2>
+    <p>Documents selected through the system file picker are copied into app-private storage and linked to a shop. Follow-ups, due dates, favourites, unfinished drafts and original business-card text are also stored locally. Optional reminders use the device's notification service; YiwuSupply does not run a push-notification server.</p>
+    <p>You can create and share a local backup containing your sourcing records, photos, documents, drafts and portable settings. Backup files are not encrypted by YiwuSupply. API keys, sessions and device permissions are excluded. Save backups somewhere private. If you choose a cloud drive, messaging app or another destination through the system file/share interface, that service receives the selected file under its own terms; this is your chosen export, not automatic YiwuSupply cloud sync.</p>
+    <p>Restoring a backup replaces the local workspace after confirmation and preserves a pre-restore recovery copy. Deleting a shop removes its locally managed information after confirmation. Deletion or uninstalling the app does not remove copies you exported, copies shared with recipients, or requests already processed by an AI provider.</p>
+
+    <h2>AI in version 1.2.0 beta</h2>
+    <p>Optional AI uses only OpenAI with your own API key held in platform secure storage. Business-card extraction uses GPT-6 Luna and sends only the selected business-card images, up to four compressed images depending on the platform. The editable result prioritizes English while retaining original Chinese facts separately. Explicit detailed analysis uses GPT-6.1 Sol and sends the selected capture images and typed context shown by that workflow. Nothing is sent automatically. Document attachments, backups, your full shop library, personal ratings and saved GPS coordinates are not automatically sent for card extraction.</p>
+
+    <h2>AI provider keys in earlier versions</h2>
+    <p>Versions before 1.2.0 can store optional keys for OpenAI, Claude/Anthropic, Google Gemini, and DeepSeek. Nothing is sent automatically. When the user selects a provider and taps <strong>Analyze</strong>, YiwuSupply sends the current typed capture context directly to that provider. OpenAI, Claude, and Gemini may also receive compressed copies of up to four selected capture photos; DeepSeek receives typed context only. The provider processes that content under the user's account and its own terms and privacy policy. Suggestions remain editable and are stored locally only when the user saves.</p>
     <p>The app does not keep a separate server copy of an AI request or response. The selected provider may retain account and request data according to its own terms. Users can revoke future AI use by clearing the provider key in Settings and not using Analyze; provider-side access, retention, or deletion requests must be managed through the user's account with that provider.</p>
 
     <h2>Analytics, advertising, and tracking</h2>
