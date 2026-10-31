@@ -11,17 +11,18 @@
   <main>
     <a class="brand" href="../">YIWUSUPPLY</a>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective September 15, 2026; updated October 28, 2026</p>
+    <p class="meta">Effective September 15, 2026; updated November 1, 2026</p>
     <p>YiwuSupply is an independent, local-first sourcing companion. The current mobile release does not require an online account and does not send personal or sourcing data to YiwuSupply or TC Safa servers.</p>
 
     <h2>Data stored on the device</h2>
-    <p>The app stores shops, products, offers, collections, visits, quotation history, notes, photos, attachments, and app settings in app-private storage on the phone. Optional AI-provider API keys are held using platform secure storage. Removing the app removes its local app data according to the phone platform's behavior.</p>
+    <p>The app stores shops, products, offers, collections, visits, quotation history, notes, photos, attachments, voice recordings, derived searchable text, and app settings in app-private storage on the phone. Optional AI-provider API keys are held using platform secure storage. Removing the app removes its local app data according to the phone platform's behavior.</p>
 
     <h2>Device permissions</h2>
     <ul>
       <li>Camera and photo access are used only when the user captures or selects sourcing images.</li>
+      <li>Microphone access is requested only when you start a voice note. Optional speech permission is used for supported on-device transcription; there is no server-recognition fallback.</li>
       <li>Foreground location is optional and is used during Quick Capture to save a shop coordinate. The app does not request background location.</li>
-      <li>Internet access is used for requested AI analysis, separately enabled automatic product-photo suggestions, explicitly requested shop recaps, or requested supplier-draft translation. Manual saving works without internet access.</li>
+      <li>Internet access is used for requested AI analysis, separately enabled automatic product-photo suggestions, explicitly requested shop recaps, requested supplier-draft translation, or Android ML Kit diagnostic metrics described below. Manual saving, recording, document reading and cost estimates work without internet access.</li>
     </ul>
 
     <h2>Version 1.2.0 beta: documents, follow-ups and backups</h2>
@@ -48,15 +49,21 @@
     <p>You can optionally password-protect a full local backup using authenticated encryption provided by the platform. The password is not saved by YiwuSupply and a forgotten password cannot be recovered by the app. An unprotected backup remains readable without a password, so keep it private. Creating a backup or opening Share does not prove an external copy exists; Verify a saved backup reads the file you select. Backups include recoverable deleted shops, projects, samples and media, but exclude AI keys, sessions, device permissions and AI consent. They are not automatic cloud sync.</p>
     <p>English and Chinese supplier-message templates work offline. A separate optional Translate and preview action sends only the draft text to OpenAI GPT-6 Luna using your own key, after per-request disclosure and consent. Recognized numbers and identifiers are replaced with placeholders and restored locally after validation. Other wording may still contain sensitive information you typed; masking is not guaranteed anonymization. Photos, attachments, the full library and saved GPS coordinates are not included in this translation request. Requests set <code>store:false</code>, which is not a guarantee of zero provider retention. Review both drafts before copying or sharing. The app does not automatically send a supplier message or modify saved quotations from the translated draft.</p>
 
+    <h2>Version 1.6.0 beta: local capture and retrieval tools</h2>
+    <p>When you share supported photos or documents into YiwuSupply, private copies wait in a local inbox until you choose an existing or new shop and confirm attachment. On iOS, the share extension uses an app group limited to YiwuSupply and its extension. It receives a local shop-choice list and incoming copies, not the workspace database or API keys. Pending inbox copies are operational files and are excluded from full workspace backups until attached. Discarding incoming copies does not delete the original source or already saved shop attachments.</p>
+    <p>Voice notes are private recordings of up to two minutes. Optional transcription is requested only with supported on-device recognition and installed language support. No recording is sent to OpenAI or another speech server by this tool. Transcripts are editable and may contain recognition errors. Attached recordings and saved transcripts are included in version 5 local backup archives and follow the shop's recovery/deletion rules.</p>
+    <p>Supported images, PDF pages and small UTF-8 text files can be read locally for search. Android image recognition supports English and Chinese; iOS recognition depends on platform language support. Derived text may contain errors and remains separate from original files and confirmed prices. It does not reconstruct invoices or change quotations. Word and Excel files can still be attached and opened, but their contents are not extracted by this tool.</p>
+    <p>The buying-cost calculator uses the unit price, quantity, packing/shipping totals and exchange rate you enter. It uses exact decimal arithmetic and local currency precision data, without an AI request or live exchange-rate lookup. Estimates do not replace quotations and exclude taxes and costs you have not entered.</p>
+
     <h2>AI provider keys in earlier versions</h2>
     <p>Versions before 1.2.0 can store optional keys for OpenAI, Claude/Anthropic, Google Gemini, and DeepSeek. Nothing is sent automatically. When the user selects a provider and taps <strong>Analyze</strong>, YiwuSupply sends the current typed capture context directly to that provider. OpenAI, Claude, and Gemini may also receive compressed copies of up to four selected capture photos; DeepSeek receives typed context only. The provider processes that content under the user's account and its own terms and privacy policy. Suggestions remain editable and are stored locally only when the user saves.</p>
     <p>The app does not keep a separate server copy of an AI request or response. The selected provider may retain account and request data according to its own terms. Users can revoke future AI use by clearing the provider key in Settings and not using Analyze; provider-side access, retention, or deletion requests must be managed through the user's account with that provider.</p>
 
     <h2>Analytics, advertising, and tracking</h2>
-    <p>The current release contains no advertising SDK, analytics SDK, or cross-app tracking. YiwuSupply does not sell user data.</p>
+    <p>YiwuSupply has no advertising SDK or cross-app tracking and does not sell user data. Versions before 1.6.0 did not include an analytics SDK. Version 1.6.0 on Android uses bundled Google ML Kit for document recognition. Photos, page images, text and recognition results are processed on-device and are not sent to Google by this SDK. ML Kit does send diagnostic and usage metrics to Google, including device/app information, a per-installation identifier, performance/configuration information, input/output sizes, feature events and error codes. Google documents HTTPS transport and no third-party sharing of these metrics. See <a href="https://developers.google.com/ml-kit/terms">ML Kit privacy information</a> and <a href="https://developers.google.com/ml-kit/android-data-disclosure">its data disclosure details</a>. iOS uses platform Vision/PDFKit and supported on-device Speech instead of this Google SDK.</p>
 
     <h2>Contact and changes</h2>
-    <p>Privacy questions may be sent to <a href="mailto:dev@tc-safa.com">dev@tc-safa.com</a>. This policy will be updated before any future cloud account, sync, server storage, or analytics becomes active.</p>
+    <p>Privacy questions may be sent to <a href="mailto:dev@tc-safa.com">dev@tc-safa.com</a>. This policy will be updated before any future cloud account, sync, server storage, or additional analytics becomes active.</p>
     <p>YiwuSupply is an independent buyer tool and is not affiliated with or endorsed by Yiwu International Trade Market.</p>
     <nav class="links" aria-label="Store information">
       <a href="../">Overview</a>
