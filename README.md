@@ -9,4 +9,5 @@ or private operational documentation.
 - [YiwuSupply](https://technicalcenter-dev.github.io/legal/yiwusourcing/)
   - [Privacy policy](https://technicalcenter-dev.github.io/legal/yiwusourcing/privacy/)
   - [Support](https://technicalcenter-dev.github.io/legal/yiwusourcing/support/)
+- [Portal Keyboard for iPhone and iPad](https://technicalcenter-dev.github.io/legal/portal/privacy/)
 
